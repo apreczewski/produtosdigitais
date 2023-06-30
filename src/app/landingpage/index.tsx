@@ -5,6 +5,7 @@ import { BenefitsSection } from '@components/BenefitsSection';
 import { AuthorSection } from '@components/AuthorSection';
 import { CourseDetailsSection } from '@components/CourseDetailsSection';
 import { TestimonialsSection } from '@components/TestimonialsSection';
+import { FinalCTASection } from '@components/FinalCTASection';
 
 import * as Styled from './styles';
 
@@ -16,6 +17,7 @@ export default function LandingPage() {
       <AuthorSection />
       <CourseDetailsSection />
       <TestimonialsSection />
+      <FinalCTASection />
     </Styled.Container>
   );
 }

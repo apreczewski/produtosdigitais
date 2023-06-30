@@ -1,7 +1,5 @@
 import React from "react";
 
-// import { Container } from './styles';
-
 export const HeroSection: React.FC = () => {
   return (
     <div

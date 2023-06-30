@@ -1,5 +1,3 @@
-// Componente: TestimonialsSection.jsx
-
 import React from "react";
 
 export const TestimonialsSection = () => {

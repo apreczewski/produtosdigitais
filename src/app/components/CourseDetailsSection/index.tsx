@@ -1,5 +1,3 @@
-// Componente: CourseDetailsSection.jsx
-
 import React from "react";
 
 export const CourseDetailsSection = () => {

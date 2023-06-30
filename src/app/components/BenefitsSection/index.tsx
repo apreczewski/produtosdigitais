@@ -1,5 +1,3 @@
-// Componente: BenefitsSection.jsx
-
 import React from 'react';
 
 export const BenefitsSection = () => {
