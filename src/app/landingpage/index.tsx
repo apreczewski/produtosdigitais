@@ -3,9 +3,10 @@
 import { HeroSection } from '@components/HeroSection';
 import { BenefitsSection } from '@components/BenefitsSection';
 import { AuthorSection } from '@components/AuthorSection';
+import { CourseDetailsSection } from '@components/CourseDetailsSection';
+import { TestimonialsSection } from '@components/TestimonialsSection';
 
 import * as Styled from './styles';
-import { CourseDetailsSection } from '../components/CourseDetailsSection';
 
 export default function LandingPage() {
   return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <BenefitsSection />
       <AuthorSection />
       <CourseDetailsSection />
+      <TestimonialsSection />
     </Styled.Container>
   );
 }
