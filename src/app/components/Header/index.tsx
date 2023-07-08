@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 
@@ -6,19 +6,25 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 200) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
+    // Check if window is defined (so if we're on the client-side)
+    if (typeof window !== "undefined") {
+      const offset = window.scrollY;
+      if (offset > 200) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // Check if window is defined (so if we're on the client-side)
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (
@@ -30,7 +36,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="text-2xl text-gray-800 font-bold">Nome do Site</div>
         <div className="space-x-4">
-          <a href="/login" className="text-blue-500 hover:text-blue-400">
+          <a href="/signin" className="text-blue-500 hover:text-blue-400">
             Login
           </a>
           <a

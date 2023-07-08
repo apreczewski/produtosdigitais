@@ -6,18 +6,21 @@ import { AuthorSection } from '@components/AuthorSection';
 import { CourseDetailsSection } from '@components/CourseDetailsSection';
 import { TestimonialsSection } from '@components/TestimonialsSection';
 import { FinalCTASection } from '@components/FinalCTASection';
+import { Header } from '@components/Header';
+import { Footer } from '@components/Footer';
 
-import * as Styled from './styles';
-
-export default function LandingPage() {
+export const LandingPage = () => {
   return (
-    <Styled.Container>
+     <>
+      <Header />
       <HeroSection />
       <BenefitsSection />
       <AuthorSection />
       <CourseDetailsSection />
       <TestimonialsSection />
       <FinalCTASection />
-    </Styled.Container>
+      <Footer />
+     </>
+
   );
 }

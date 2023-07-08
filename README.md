@@ -11,6 +11,9 @@ yarn dev
 # or
 pnpm dev
 ```
+## Node version
+nvm use 18.13.0
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
