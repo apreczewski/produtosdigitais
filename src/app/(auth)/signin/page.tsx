@@ -8,16 +8,8 @@ export default function Signin() {
     <div className="flex min-h-screen bg-gray-50">
       <div className="flex items-center justify-center flex-1 p-4 sm:px-6 lg:px-20 xl:px-24">
         <div className="max-w-4xl w-full bg-white rounded-xl shadow-md border border-gray-200 flex">
-          <div className="flex flex-col w-1/2 pr-5 p-10">
+          <div className="flex flex-col w-1/2 p-5">
             <div>
-              <Image
-                className="h-10 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-                width={100}
-                height={100}
-                loading="lazy"
-              />
               <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                 Sign in to your account
               </h2>
@@ -32,7 +24,7 @@ export default function Signin() {
               </p>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-5">
               <div>
                 <form action="#" method="POST" className="space-y-6">
                   <div>
@@ -110,7 +102,7 @@ export default function Signin() {
                 </form>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-5">
                 <div className="relative">
                   <div
                     className="absolute inset-0 flex items-center"
@@ -173,7 +165,7 @@ export default function Signin() {
               alt={""}
               src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
               width={500}
-              height={500}
+              height={300}
             />
           </div>
         </div>
