@@ -37,7 +37,7 @@ export const Header = () => {
         <div className="text-2xl text-gray-800 font-bold">Nome do Site</div>
         <div className="space-x-4">
           <a href="/signin" className="text-blue-500 hover:text-blue-400">
-            Login
+            Sign In
           </a>
           <a
             href="/signup"
