@@ -197,7 +197,6 @@ export default function Dashboard() {
           <NavbarClose />
         )}
 
-
         <Toggle
           enabled={enabled}
           callback={() => handleEnabledSidebar(!enabled)}
