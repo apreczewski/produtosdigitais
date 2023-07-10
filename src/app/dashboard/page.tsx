@@ -15,6 +15,8 @@ import {
 import NavbarOpen from "./NavbarOpen";
 import NavbarClose from "./NavbarClose";
 import Toggle from "../components/Toggle";
+import Modulos from "./Modulos";
+import Image from "next/image";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
@@ -37,7 +39,7 @@ function classNames(...classes: any[]) {
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [enabled, setEnabled] = useState(true);
+  const [enabledToggle, setEnabledToggle] = useState(false);
 
   const handleSidebar = (status: boolean) => {
     if (status) {
@@ -49,22 +51,14 @@ export default function Dashboard() {
 
   const handleEnabledSidebar = (status: boolean) => {
     if (status) {
-      setEnabled(true);
+      setEnabledToggle(true);
     } else {
-      setEnabled(false);
+      setEnabledToggle(false);
     }
   };
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
       <div className="relative">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
@@ -121,10 +115,12 @@ export default function Dashboard() {
                   {/* Sidebar component, swap this element with another sidebar if you like */}
                   <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-2 ring-1 ring-white/10">
                     <div className="flex h-16 shrink-0 items-center">
-                      <img
+                      <Image
                         className="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                         alt="Your Company"
+                        width={200}
+                        height={200}
                       />
                     </div>
                     <nav className="flex flex-1 flex-col">
@@ -187,23 +183,25 @@ export default function Dashboard() {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-
-        {enabled && (
-          <NavbarOpen
-            callback={() => handleSidebar(!sidebarOpen)}
-          />
+        {enabledToggle && (
+          <NavbarOpen callback={() => handleSidebar(!sidebarOpen)} />
         )}
-        {!enabled && (
-          <NavbarClose />
-        )}
+        {!enabledToggle && <NavbarClose />}
 
         <Toggle
-          enabled={enabled}
-          callback={() => handleEnabledSidebar(!enabled)}
+          enabled={enabledToggle}
+          callback={() => handleEnabledSidebar(!enabledToggle)}
         />
 
-        <main className="py-10 lg:pl-72">
-          <div className="px-4 sm:px-6 lg:px-8">{/* Your content */}</div>
+        <main
+          className={classNames(
+            enabledToggle ? "lg:ml-72" : "lg:ml-20",
+            "py-10"
+          )}
+        >
+          <div className="px-4 sm:px-6 lg:px-8">
+            <Modulos />
+          </div>
         </main>
       </div>
     </>
