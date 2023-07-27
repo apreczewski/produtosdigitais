@@ -1,3 +1,5 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -7,6 +9,10 @@ const nextConfig = {
   reactStrictMode: true,
   compiler: {
     styledComponents: true,
+  },
+  webpack: (config) => {
+    config.resolve.alias['@assets'] = path.join(__dirname, './src/assets');
+    return config;
   },
 };
 

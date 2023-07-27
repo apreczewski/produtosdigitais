@@ -14,24 +14,40 @@ pnpm dev
 ## Node version
 nvm use 18.13.0
 
+# Padrão de Criação de Landing Page
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ao criar uma landing page eficaz, é importante seguir um padrão que possa ser adaptado para diferentes produtos. Aqui está um passo a passo básico para a criação de uma landing page:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Título e Subtítulo**: O título deve ser atraente e comunicar a proposta de valor do seu produto de forma clara e concisa. O subtítulo pode fornecer mais detalhes e reforçar o valor do produto.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Imagens ou Vídeos**: As imagens ou vídeos devem ser de alta qualidade e relevantes para o produto. Eles podem mostrar o produto em uso, destacar os principais recursos ou demonstrar os resultados que os clientes podem esperar.
 
-## Learn More
+3. **Descrição do Produto**: Esta seção deve detalhar os principais recursos e benefícios do produto. É importante focar em como o produto resolve um problema ou atende a uma necessidade do cliente.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Depoimentos ou Avaliações de Clientes**: Depoimentos de clientes satisfeitos podem aumentar a credibilidade do seu produto e incentivar outros a comprar.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Chamada para Ação (CTA)**: O CTA deve ser claro e direto, incentivando os visitantes a tomar uma ação específica, como 'Compre Agora' ou 'Inscreva-se'.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+6. **Garantia**: Se aplicável, uma garantia pode ajudar a aliviar quaisquer preocupações ou objeções que os clientes em potencial possam ter.
 
-## Deploy on Vercel
+7. **Informações de Contato**: Inclua várias formas de contato para que os clientes em potencial possam entrar em contato com você se tiverem perguntas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este é um modelo básico que pode ser adaptado para diferentes produtos. Dependendo do produto específico, você pode querer adicionar ou remover seções. Por exemplo, para um produto digital como um e-book de receitas, você pode incluir uma seção com uma amostra gratuita do e-book.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## todo
+
+[Ok] **1 Título e Subtítulo**(conponent: TitleSubtitle): O título deve ser atraente e comunicar a proposta de valor do seu produto de forma clara e concisa. O subtítulo pode fornecer mais detalhes e reforçar o valor do produto.
+
+[Ok] **2 Imagens ou Vídeos**(conponent: TitleSubtitle): As imagens ou vídeos devem ser de alta qualidade e relevantes para o produto. Eles podem mostrar o produto em uso, destacar os principais recursos ou demonstrar os resultados que os clientes podem esperar.
+
+[Ok] **3 Descrição do Produto**: Esta seção deve detalhar os principais recursos e benefícios do produto. É importante focar em como o produto resolve um problema ou atende a uma necessidade do cliente.
+
+[] **4 Depoimentos ou Avaliações de Clientes**: Depoimentos de clientes satisfeitos podem aumentar a credibilidade do seu produto e incentivar outros a comprar.
+
+[] **5 Chamada para Ação (CTA)**: O CTA deve ser claro e direto, incentivando os visitantes a tomar uma ação específica, como "Compre Agora" ou "Inscreva-se".
+
+[] **6 bonus**: bonus".
+
+[] **7 Garantia**: Se aplicável, uma garantia pode ajudar a aliviar quaisquer preocupações ou objeções que os clientes em potencial possam ter.
+
+[] **8 Informações de Contato**: Inclua várias formas de contato para que os clientes em potencial possam entrar em contato com você se tiverem perguntas.

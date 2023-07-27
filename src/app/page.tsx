@@ -1,5 +1,5 @@
-import { LandingPage } from "@/app/landingpage";
+import { ReceitasFitness } from "@/app/receitasfitness";
 
 export default function Home() {
-  return <LandingPage />
+  return <ReceitasFitness />
 }
